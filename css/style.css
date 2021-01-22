@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+input, a, button {
+  outline: 1; }
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0; }
+
+.wrap ::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+#bg {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+  padding: 40px 80px;
+  box-sizing: border-box;
+  overflow: hidden; }
+  #bg .inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 1s; }
+    #bg .inner .header {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      #bg .inner .header h1 {
+        width: 20%; }
+        #bg .inner .header h1 .logo {
+          width: 130px; }
+      #bg .inner .header #menu {
+        width: 80%;
+        display: flex;
+        justify-content: center; }
+        #bg .inner .header #menu li a {
+          font: bold 16px/1.5 "Be Vietnam";
+          color: #555;
+          padding: 10px;
+          margin: 25px; }
+      #bg .inner .header .util {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end; }
+        #bg .inner .header .util li a {
+          font: bold 16px/2 "Be Vietnam";
+          color: #555;
+          padding: 5px;
+          margin: 7px; }
+        #bg .inner .header .util li:nth-last-of-type(1) a {
+          margin-right: 0px; }
+    #bg .inner #frame {
+      width: 100%;
+      height: 100%;
+      border: 1px solid red;
+      transition: 1s;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+      #bg .inner #frame .pic {
+        width: 1000px;
+        height: 700px;
+        margin: 0px auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: 1s; }
+      #bg .inner #frame.r1 .pic {
+        background-image: url(../img/detroitarrow.png); }
+      #bg .inner #frame.r1 #circle {
+        transform: rotate(0deg); }
+      #bg .inner #frame.r2 .pic {
+        background-image: url(../img/runwell.png); }
+      #bg .inner #frame.r2 #circle {
+        transform: rotate(-40deg); }
+      #bg .inner #frame.r3 #circle {
+        transform: rotate(-80deg); }
+      #bg .inner #frame.r4 #circle {
+        transform: rotate(-120deg); }
+      #bg .inner #frame #circle {
+        width: 700px;
+        height: 700px;
+        border: 1px solid #777777;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        bottom: -600px;
+        margin-left: -375px;
+        transition: 0.5s; }
+        #bg .inner #frame #circle ul li {
+          font: bold 22px/50px "arial";
+          color: #777;
+          width: 140px;
+          height: 50px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-top: -25px;
+          margin-left: -70px;
+          transition: 1s;
+          text-align: center; }
+          #bg .inner #frame #circle ul li::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: #777;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            bottom: -2%;
+            transform: translateX(-50%);
+            transition: 0.5s; }
+          #bg .inner #frame #circle ul li.on {
+            color: #333; }
+            #bg .inner #frame #circle ul li.on::after {
+              transform: translateX(-50%) scale(1.3);
+              background: #333; }
+          #bg .inner #frame #circle ul li:nth-of-type(1) {
+            transform: rotate(0deg) translateY(-372px); }
+          #bg .inner #frame #circle ul li:nth-of-type(2) {
+            transform: rotate(40deg) translateY(-372px); }
+          #bg .inner #frame #circle ul li:nth-of-type(3) {
+            transform: rotate(80deg) translateY(-372px); }
+          #bg .inner #frame #circle ul li:nth-of-type(4) {
+            transform: rotate(120deg) translateY(-372px); }
+          #bg .inner #frame #circle ul li:nth-of-type(5) {
+            transform: rotate(160deg) translateY(-372px); }
+      #bg .inner #frame .btns {
+        position: absolute;
+        left: 0px;
+        bottom: 0px; }
+        #bg .inner #frame .btns li {
+          position: absolute;
+          bottom: 0px;
+          left: 0px; }
+          #bg .inner #frame .btns li a {
+            font: 14px/1 "Be Vietnam";
+            color: #444;
+            opacity: 0;
+            transition: 0.5s; }
+          #bg .inner #frame .btns li.on a {
+            opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */
